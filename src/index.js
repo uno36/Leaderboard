@@ -1,3 +1,4 @@
+import './styles.css';
 import addScore from '../modules/add-score.js';
 import clearScores from '../modules/clear-scores.js';
 

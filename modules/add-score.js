@@ -9,12 +9,16 @@ function addScore() {
 
   const listItem = document.createElement('li');
   listItem.classList.add('list-group-item', 'border-dark');
+  listItem.style.border = '1px solid black';
+  listItem.style.listStyleType = 'none';
+  listItem.style.padding = '10px';
+  listItem.style.width = '90%';
 
   // Get the count of existing list items
   const existingCount = scoresList.querySelectorAll('.list-group-item').length;
 
   if (existingCount % 2 === 1) {
-    listItem.classList.add('list-group-item-dark');
+    listItem.style.background = 'dimgray';
   }
 
   listItem.textContent = `${nameInput.value}: ${scoreInput.value}`;
