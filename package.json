@@ -19,7 +19,7 @@
     "webpack-cli": "^5.1.1"
   },
   "scripts": {
-    "start": "webapack --mode development",
+    "start": "webpack --mode development",
     "build": "webpack --mode production"    
   },
   "keywords": [],
