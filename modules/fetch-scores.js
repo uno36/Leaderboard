@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 // fetch-scores.js
-import {API_BASE_URL, API_KEY } from './config.js';
+import { API_BASE_URL, API_KEY } from './config.js';
 
 const errorDiv = document.querySelector('#error-message'); // Get the error div element
 

@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         listItem.textContent = `${score.user}: ${score.score}`;
-        scoresList.insertBefore(listItem, scoresList.firstChild); // Add the new item at the top of the list
+        scoresList.insertBefore(listItem, scoresList.firstChild);
       });
     } catch (error) {
       eventEmitter.emit('fetchError', error);
@@ -84,25 +84,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const preventListDisplay = () => {
     const scoresList = document.querySelector('.list-group');
-    scoresList.style.display = 'none'; // Hide the scores list initially
+    scoresList.style.display = 'none';
 
     const refreshButton = document.querySelector('.refresh');
     refreshButton.addEventListener('click', () => {
-      scoresList.style.display = 'block'; // Show the scores list when the refresh button is clicked
+      scoresList.style.display = 'block';
     });
 
     const submitButton = document.querySelector('.submit');
     submitButton.addEventListener('click', () => {
-      scoresList.style.display = 'block'; // Show the scores list when the submit button is clicked
+      scoresList.style.display = 'block';
     });
   };
 
-  preventListDisplay(); // Call the preventListDisplay function to prevent initial list display
+  preventListDisplay();
 
   const refreshButton = document.querySelector('.refresh');
   refreshButton.addEventListener('click', refreshScores);
 
   refreshScores();
 });
-
-

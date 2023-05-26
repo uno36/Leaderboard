@@ -23,7 +23,7 @@ const submitScore = async (gameId, userName, score) => {
     const data = await response.json();
     return data.result;
   } catch (error) {
-    handleSubmissionError(error); 
+    handleSubmissionError(error);
     return null;
   }
 };
