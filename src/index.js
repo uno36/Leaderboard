@@ -44,7 +44,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         listItem.style.border = '1px solid black';
         listItem.style.listStyleType = 'none';
         listItem.style.padding = '10px';
-        
+        listItem.style.width = '100%';
+        listItem.style.fontFamily = 'Courier New';
+        listItem.style.color = 'red';
+        listItem.style.fontWeight = '900';
+        listItem.style.fontSize = '20px';
+        listItem.style.textAlign = 'center';
+        listItem.style.textTransform = 'uppercase';
+
         if (index % 2 === 1) {
           listItem.style.background = 'dimgray';
           listItem.style.color = 'white';

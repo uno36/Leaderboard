@@ -1,1 +1,69 @@
 
+.container {
+  margin: 150px 350px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: aliceblue;
+}
+
+.style {
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.add {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+form {
+  border: 2px solid rgba(256, 0, 0, 0.5);
+  padding: 10px 40px;
+  border-radius: 8px;
+  background-color: dimgray;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name,
+#score {
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.subm {
+  display: flex;
+  justify-content: start;
+}
+
+.list-group {
+  margin-left: -60px;
+}
+
+.submit {
+  display: block;
+}
+
+.submit,
+.refresh {
+  padding: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+  color: #ffff;
+  box-shadow: 2px 3px 5px 1px rgba(0, 0, 0);
+}
