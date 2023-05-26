@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         listItem.style.border = '1px solid black';
         listItem.style.listStyleType = 'none';
         listItem.style.padding = '10px';
-        listItem.style.width = '90%';
-
+        
         if (index % 2 === 1) {
           listItem.style.background = 'dimgray';
+          listItem.style.color = 'white';
         }
 
         listItem.textContent = `${score.user}: ${score.score}`;

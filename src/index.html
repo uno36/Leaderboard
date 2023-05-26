@@ -11,7 +11,22 @@
 
     
     <div class="container">
-    <h1 class="lead">Leaderboard</h1>    
+    <h1 class="lead">Leaderboard</h1> 
+    <div class="grid-2">
+        <h3 class="add">Add your score</h3>
+        <form>
+            <div >                      
+              <input type="text" id="name" placeholder="Your name" autocomplete="names">                      
+            </div>
+            <div>                      
+              <input type="text" id="score"  placeholder="Your score" autocomplete="off">
+            </div>
+           <div class="subm">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+            <div id="submission-error"></div>
+          </form>
+    </div>   
     <div class="grid"> 
         <div class="grid-1">     
             <div class="flex">
@@ -27,23 +42,7 @@
 
                     </ul>                    
                 </div>
-        </div>        
-
-        <div class="grid-2">
-            <h1 class="add">Add your score</h1>
-            <form>
-                <div >                      
-                  <input type="text" id="name" placeholder="Your name" autocomplete="names">                      
-                </div>
-                <div>                      
-                  <input type="text" id="score"  placeholder="Your score" autocomplete="off">
-                </div>
-               <div class="subm">
-                    <button type="submit" class="submit">Submit</button>
-                </div>
-                <div id="submission-error"></div>
-              </form>
-        </div>
+        </div>             
 
         </div>
         
