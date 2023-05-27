@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         listItem.style.border = '1px solid black';
         listItem.style.listStyleType = 'none';
         listItem.style.padding = '10px';
-        
+        listItem.style.color = 'red';
+
         if (index % 2 === 1) {
           listItem.style.background = 'dimgray';
           listItem.style.color = 'white';
