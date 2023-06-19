@@ -10,7 +10,6 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-  watch: true,
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
